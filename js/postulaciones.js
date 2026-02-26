@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function actualizarContadores() {
-        const contadores = { perro: 0, gato: 0, ave: 0 };
+        const contadores = { perro: 0, gato: 0, ave: 0, roedor: 0 };
         const postulacionesAprobadas = postulaciones.filter(p => p.estado === 'Aprobada');
 
         postulacionesAprobadas.forEach(p => {
@@ -187,6 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('contador-perros').textContent = contadores.perro;
         document.getElementById('contador-gatos').textContent = contadores.gato;
         document.getElementById('contador-aves').textContent = contadores.ave;
+        document.getElementById('contador-roedores').textContent = contadores.roedor;
     }
 
     function agregarListenersDeEstado() {
